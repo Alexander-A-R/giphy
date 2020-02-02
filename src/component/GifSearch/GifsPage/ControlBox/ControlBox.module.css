@@ -1,0 +1,138 @@
+.controlBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+    padding: 0 10%;
+    box-sizing: border-box;
+    font-size: 14px;
+    background-color: #56a8cb;
+    color: white;
+}
+.controlBox_fixed {
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    margin: 0;
+}
+
+.button {
+    outline: none;
+    padding: 3px 10px;
+    background: black;
+    border: 1px solid black;
+    color: white;
+    transition: 0.2s;
+}
+.button:hover {
+    background: aquamarine;
+    color: black;
+}
+.buttonActive {
+    color: black;
+    text-decoration: underline;
+    background-color: aquamarine;
+    border-color: black;
+}
+.rightBlock {
+    display: flex;
+    align-items: center;
+    height: 22px;
+}
+.sortButton {
+    margin-left: 10px;
+    cursor: pointer;
+}
+.sortActive {
+    font-weight: bold;
+}
+.stopPauseButtons {
+    background-color: black;
+    width: 50px;
+    position: relative;
+    margin-left: 15px;
+}
+.buttonToggle::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 25px;
+    height: 24px;
+    background-color: green;
+}
+.pauseToggle.buttonToggle::before {
+    animation: toggle 0.4s ease-in;
+    left: 25px;
+    background-color: red;
+}
+@keyframes toggle {
+    0% {
+        left: -5px;
+        background-color: green;
+    }
+    50% {
+        left: 12.5px;
+        background-color: chocolate;
+    }
+    100% {
+        left: 25px;
+        background-color: red;
+    }
+
+}
+.playToggle.buttonToggle::before {
+    animation: togglePlay 0.4s ease-in;
+    left: 0;
+    background-color: green;
+}
+@keyframes togglePlay {
+    0% {
+        left: 30px;
+        background-color: red;
+    }
+    50% {
+        left: 12.5px;
+        background-color: chocolate;
+    }
+    100% {
+        left: 0;
+        background-color: green;
+    }
+
+}
+
+.controlButton {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+}
+.play {
+    width: 25px;
+    height: 22px;
+    position: relative;
+}
+.play::before {
+    content: '\25BA';
+    position: absolute;
+    left: 7.5px;
+    top: 3.2px;
+}
+.pause {
+    position: relative;
+    width: 25px;
+    height: 22px;
+    vertical-align: bottom;
+}
+.pause::before {
+    content: '=';
+    transform: rotate(90deg);
+    position: absolute;
+    left: 6px;
+    top: -2px;
+    font-size: 20px;
+    font-weight: bold;
+}

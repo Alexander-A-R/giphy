@@ -1,0 +1,56 @@
+.slider {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    margin: 0 auto;
+    border-top: 10px solid black;
+    border-bottom: 10px solid black;
+    background-color: #3a80cb;
+}
+
+.slideItem {
+    position: absolute;
+    left: 0px;
+    height: 100px;
+    width: 300%;
+    transition: 0.3s;
+}
+
+.gif {
+    display: inline-block;
+    height: 100px;
+    /*padding: 0 5px;*/
+    background-color: black;
+}
+.gif img {
+    height: 200px;
+}
+.button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    font-size: 45px;
+    color: #f7f417;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.2s;
+    padding: 0 10px;
+    padding-bottom: 10px;
+}
+
+.button:hover {
+    background-color: rgba(70,68,255,0.8);
+}
+
+.backButton {
+    left: 0; 
+    border-radius: 0 7px 7px 0;
+}
+.forwadButton {
+    right: 0;
+    border-radius: 7px 0 0 7px;
+}

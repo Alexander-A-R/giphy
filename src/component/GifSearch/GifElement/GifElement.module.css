@@ -1,0 +1,9 @@
+.item {
+    display: inline-block;
+    vertical-align: top;
+    position: absolute;
+}
+
+.image {
+    width: 180px;
+}

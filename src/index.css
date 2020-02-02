@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Public+Sans:400,500,600,700&display=swap');
+
+*{
+    font-family: 'Public Sans', sans-serif;;
+}
+body {
+	background-color: #FFF8DC;
+}
