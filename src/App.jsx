@@ -1,5 +1,5 @@
 import React from 'react';
-import GifSearch from "./component/GifSearch/GifSearch";
+import GifSearch from "./components/GifSearch/GifSearch";
 
 const App = () => {
     return <div>
